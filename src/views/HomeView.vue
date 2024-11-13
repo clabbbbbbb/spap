@@ -7,6 +7,12 @@
       <span> but you can still join my minecraft server!!!!!!!!! </span>
       <router-link to="/get-trolled" title="awesome minecraft!!">https://discord.gg/spap</router-link>
     </div>
+    <hr width="80%" />
+    <span>looking for my other sites on spap.cloud?</span>
+    <nav>
+      <a href="https://tambourine.spap.cloud/">personal website</a>
+      <a href="https://minesweeper.spap.cloud/">cat-themed minesweeper</a>
+    </nav>
   </div>
 </template>
 
@@ -24,5 +30,16 @@ h1 {
 
 .align-left {
   align-self: flex-start;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
 }
 </style>
