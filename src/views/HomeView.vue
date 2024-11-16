@@ -5,7 +5,9 @@
     <div class="align-left">
       <h1 class="align-left">im not bad at html anymore!!!</h1>
       <span> but you can still join my minecraft server!!!!!!!!! </span>
-      <router-link to="/get-trolled" title="awesome minecraft!!">https://discord.gg/spap</router-link>
+      <router-link to="/get-trolled" title="awesome minecraft!!"
+        >https://discord.gg/spap</router-link
+      >
     </div>
     <hr width="80%" />
     <span>looking for my other sites on spap.cloud?</span>
@@ -41,5 +43,10 @@ nav {
 nav a {
   display: inline-block;
   padding: 0 1rem;
+}
+
+img.cat {
+  width: 100%;
+  height: auto;
 }
 </style>
