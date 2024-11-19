@@ -9,10 +9,21 @@ pipeline {
                 sh 'npm install' 
                 sh 'npm run build'
             }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'dist/**/*', fingerprint: true
+                }
+            }
         }
         stage('Publish') {
           steps {
-                archiveArtifacts artifacts: 'dist/**/*', fingerprint: true
+              script {
+                  copyArtifacts(
+                      projectName: currentBuild.projectName,
+                      filter: 'dist/**/*',
+                      target: '/var/jenkins_home/publish'
+                  )
+              }
           }
         }
     }
