@@ -18,11 +18,14 @@ pipeline {
         stage('Publish') {
           steps {
               script {
+                  echo 'Project name: ${currentBuild.projectName}'
                   copyArtifacts(
                       projectName: currentBuild.projectName,
                       filter: '**/*',
                       target: '/var/jenkins_home/publish'
                   )
+
+                  sh 'ls -al /var/jenkins_home/publish'
               }
           }
         }
