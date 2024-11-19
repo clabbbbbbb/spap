@@ -20,7 +20,7 @@ pipeline {
               script {
                   copyArtifacts(
                       projectName: currentBuild.projectName,
-                      filter: 'dist/**/*',
+                      filter: '**/*',
                       target: '/var/jenkins_home/publish'
                   )
               }
