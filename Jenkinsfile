@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Publish') {
           steps {
-              archiveArtifacts artifacts: 'dist/**/*', fingerprint: true
+              archiveArtifacts artifacts: 'spap/**/*', fingerprint: true
           }
         }
     }
