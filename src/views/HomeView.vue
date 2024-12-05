@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <h1>good night :]</h1>
+    <h1>good morning :]</h1>
     <img class="cat" src="https://c.tenor.com/4HleA7KDH-0AAAAC/tenor.gif" />
     <div class="align-left">
       <h1 class="align-left">im not bad at html anymore!!!</h1>
